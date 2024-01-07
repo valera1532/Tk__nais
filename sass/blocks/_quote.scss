@@ -1,0 +1,41 @@
+.quote{
+    &__text{
+        position: relative;
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        max-width: 1183px;
+        margin: 0 auto;
+        margin-bottom: 94px;
+        p:not(:last-child){
+            margin-bottom: 60px;
+        }
+        &::before{
+            content: url(./../images/quote/quotes.svg);
+            position: absolute;
+            left: -183px;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        &-item{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            min-height: 210px;
+            span{
+                max-width: 150px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.quote-leaf{
+    position: relative;
+    bottom: 55px;
+}

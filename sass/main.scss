@@ -1,0 +1,57 @@
+//Global settings
+@import './global/fonts';
+@import './global/vars';
+@import './global/reset';
+@import './global/global';
+
+//Header
+
+@import './blocks/header';
+
+//Blocks
+
+@import './blocks/main-page';
+
+@import './blocks/welcome';
+
+@import './blocks/quote';
+
+@import './blocks/our-services';
+
+@import './blocks/meeting';
+
+@import './blocks/promotions';
+
+@import './blocks/gallery';
+
+@import './blocks/team';
+
+@import './blocks/questions';
+
+@import './blocks/faq-accordion';
+
+//Service page
+
+@import './blocks/service';
+
+@import './blocks/prices';
+
+//Loyalty page
+
+@import './blocks/loyalty';
+
+//Conctacts page
+
+@import './blocks/contacts';
+
+//Promotions page
+
+@import './blocks/promotion-section';
+
+//Footer
+
+@import './blocks/footer';
+
+//Media
+
+@import './media';

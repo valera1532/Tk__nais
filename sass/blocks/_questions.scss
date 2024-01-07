@@ -1,0 +1,47 @@
+.questions{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 135px;
+    background-color: $accents-white-first;
+    overflow-x: hidden;
+    &::after{
+        content: url(./../images/element_1.svg);
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: -130px;
+        transform: scale(-1, 1);
+    }
+    &__inner{
+        position: relative;
+        z-index: 2;
+    }
+    &__title{
+        margin-bottom: 25px;
+    }
+    &__subtitle{
+        max-width: 874px;
+        margin-bottom: 80px;
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+
+}
+
+.questions__btn-help,
+.questions__btn-whatsapp{
+    width: 384px;
+    background-color: $accents-blue;
+    color: #fff;
+    @include hover-btn-first;
+}
+
+.questions__btn-num{
+    width: 443px;
+    color: $accents-blue;
+    text-transform: capitalize;
+    @include hover-btn-second;
+}

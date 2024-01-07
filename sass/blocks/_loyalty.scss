@@ -1,0 +1,23 @@
+.our-loyalty{
+    margin-top: 55px;
+    position: relative;
+    &::before{
+        content: url(./../images/service/element.svg);
+        top: -150px;
+        left: -50px;
+        position: absolute;
+    }
+    &__title{
+        position: relative;
+        z-index: 2;
+        font-size: 65px;
+        text-align: left;
+    }
+    &__text{
+        position: relative;
+        z-index: 2;
+        p:not(:last-child){
+            margin-bottom: 65px;
+        }
+    }
+}

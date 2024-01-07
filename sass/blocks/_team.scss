@@ -1,0 +1,15 @@
+.team{
+    text-align: center;
+    &__img{
+        border-radius: 12px;
+        margin-bottom: 66px;
+    }
+    &__description{
+        text-align: left;
+        max-width: 1052px;
+        margin: 0 auto;
+
+        font-size: 24px;
+
+    }
+}

@@ -1,0 +1,50 @@
+.faq{
+    &__title{
+        text-align: left;
+    }
+    &__accordion{
+        &-item{
+                padding: 25px 40px;
+                width: 100%;
+                border: 1px solid #E1E1E1;
+                border-radius: 12px;
+                transition: border .3s ease-in-out;
+                width: 95%;
+                &.active{
+                    border: 1px solid #00A9A2;
+                    .faq__accordion-title svg{
+                        transform: rotate(-180deg);
+                    }
+                }
+                &:not(:last-child){
+                    margin-bottom: 30px;
+                }
+        }
+        &-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            svg{
+                transition: all .3s ease-in-out;
+            }
+        }
+        &-content{
+            max-width: 1183px;
+            display: flex;
+            gap: 30px;
+            color: $accents-blue;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: 0.9px;
+            position: relative;
+            overflow: hidden;
+            max-height: 0;
+            transition: .3s ease-out;
+            svg,
+            span{
+                padding-top: 30px;
+            }
+        }
+    }
+}

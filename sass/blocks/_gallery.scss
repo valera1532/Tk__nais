@@ -1,0 +1,50 @@
+.gallery{
+    background-color: $accents-white-second;
+    padding-top: 120px;
+    padding-bottom: 134px;
+    &__subtitle{
+        max-width: 636px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 35px;
+        margin-bottom: 125px;
+        &-item{
+            max-width: 435;
+            img{
+                border-radius: 12px;
+            }
+            &:nth-child(2n){
+                position: relative;
+                bottom: 65px;
+            }
+        }
+    }
+}
+
+.gallery__btn-inst{
+    width: 293px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: $accents-blue;
+    svg path{
+        fill: white;
+    }
+    @include hover-btn-first;
+    svg path{
+        transition: all .3s ease-in-out;
+    }
+    &:hover{
+        svg path{
+            fill: $accents-blue;
+        }
+    }
+}

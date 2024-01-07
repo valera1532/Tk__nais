@@ -1,0 +1,81 @@
+.main-page{
+    background-image: url(./../images/main-page/bg.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    &__inner{
+        padding-top: 73px;
+        padding-bottom: 120px;
+        &-btns{
+            display: flex;
+            align-items: center;
+            gap: 34px;
+        }
+    }
+    &__title{
+        max-width: 1007px;
+        margin-bottom: 55px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: stretch;
+        gap: 30px 80px;
+        max-width: 824px;
+        margin-bottom: 100px;
+        &-item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            img{
+                position: relative;
+                z-index: 2;
+            }
+
+        }
+        &-img{
+            position: relative;
+            display: flex;
+            justify-content: c;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 44px;
+                height: 44px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #FAFAFA;
+                z-index: 1;
+                border-radius: 13px;
+            }
+        }
+    }
+}
+
+.main-page__book{
+    color: #FFF;
+    text-align: center;
+    background-color: $accents-blue;
+    width: 380px;
+    @include hover-btn-first
+}
+
+.main-page__faq{
+    color: $accents-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 442px;
+    @include hover-btn-second;
+    svg path{
+        transition: all .3s ease-in-out;
+    }
+    &:hover{
+        svg path{
+            fill: #fff;
+        }
+    }
+}

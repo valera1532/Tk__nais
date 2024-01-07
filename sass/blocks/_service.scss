@@ -1,0 +1,42 @@
+.service{
+    margin-top: 55px;
+    position: relative;
+    &::before{
+        content: url(./../images/service/element.svg);
+        top: -150px;
+        left: -50px;
+        position: absolute;
+    }
+    &__title{
+        position: relative;
+        z-index: 2;
+        font-size: 65px;
+        text-align: left;
+    }
+    &__inner{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img{
+        border-radius: 12px;
+    }
+    &__description-info{
+        max-width: 920px;
+    }
+    &__name{
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: 1.9px;
+        margin-bottom: 15px;
+    }
+    &__description{
+        font-size: 22px;
+        letter-spacing: 1.1px;
+        margin-bottom: 45px;
+        p:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}
